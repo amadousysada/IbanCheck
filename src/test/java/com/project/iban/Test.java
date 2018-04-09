@@ -16,7 +16,7 @@ class Test{
 	   	  //String URL="https://openiban.com/validate/FR6430002016000000448257G55?getBIC=true&validateBankCode=true";
 	   		String URL = "https://openiban.com/validate/DE91100000000123456789?getBIC=true&validateBankCode=true";
 	      RestTemplate template=new RestTemplate();
-	 
+	      System.out.println("RESULTAT : \n");
 	      String s =template.getForObject(URL,String.class);
       return s;
    }
